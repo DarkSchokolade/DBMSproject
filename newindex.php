@@ -9,8 +9,8 @@
 <body>
 	<form method="post">
   		<label>SEARCH</label>
-		<input type="text" name="search">
-		<input class="btn btn-primary" type="submit" name="submit" value ="GO!">
+		<input type="text" name="search" >
+		<input class="btn btn-primary" type="submit" name="submit" value ="GO!" >
 	</form>
 
 	<?php 
@@ -74,10 +74,9 @@
 						 ?>
 					</tbody>
 				</table>
-				<br>
-				<img src="Images/<?php echo $str ?>.jpeg">
+				
 				<br><br>
-				<th>DESCRIPTION</th>
+
 				<?php 
 
 				$filename = "Description/$str.txt";
@@ -90,9 +89,22 @@
 				$size = filesize($filename);
 				$text = fread($file, $size);
 
-				echo "<pre>$text</pre>" 
+				?>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="jumbotron">
 
-				 ?>
+							<img src="Images/<?php echo $str ?>.jpeg"> <!-- for image display within jumbotron -->
+
+							<h1 class="display-4"> DESCRIPTION</h1>
+							<hr class="my-4">
+							<?
+							echo "<pre>$text</pre>"
+							?>
+						</div>
+					</div>
+				</div>
+				 
 
 				 <a href="breeds.php" target="_blank">BREEDS</a>
 			</div>
