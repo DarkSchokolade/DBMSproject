@@ -7,11 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	<nav class="navbar navbar-inverse" style="background-color: #e67c0b">
+  		<span class="navbar-brand mb-0 h1">Cell-O-Pedia</span>
+	
 	<form method="post">
-  		<label>SEARCH</label>
-		<input type="text" name="search" >
+  		<!-- <label>SEARCH</label> -->
+		<input type="text" name="search" placeholder="Search">
 		<input class="btn btn-primary" type="submit" name="submit" value ="GO!" >
 	</form>
+	</nav>
 
 	<?php 
 
