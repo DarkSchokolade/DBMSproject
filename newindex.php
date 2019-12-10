@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	<style>
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
 	<nav class="navbar navbar-inverse" style="background-color: #e67c0b">
   		<span class="navbar-brand mb-0 h1">Cell-O-Pedia</span>
 	
@@ -14,6 +22,7 @@
   		<!-- <label>SEARCH</label> -->
 		<input type="text" name="search" placeholder="Search">
 		<input class="btn btn-primary" type="submit" name="submit" value ="GO!" >
+		<a href="feedback.php" target="_blank" >Feedback on site</a>
 	</form>
 	</nav>
 
@@ -52,7 +61,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-2">
-				<table class="table table-striped">
+				<table class="table table-dark table-striped" >
 					<thead>
 						<tr>
 							<th scope="col">NAME</th>
@@ -105,12 +114,15 @@
 							<?
 							echo "<pre>$text</pre>"
 							?>
+							
+							<br>
+							<a href="breeds.php" target="_blank">BREEDS</a>
 						</div>
 					</div>
 				</div>
 				 
 
-				 <a href="breeds.php" target="_blank">BREEDS</a>
+				 
 			</div>
 		</div>
 	</div>
