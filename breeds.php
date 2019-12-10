@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	<style>
+body {
+  background-image: url('bree.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
 	<?php 
 session_start();
 
@@ -33,7 +41,7 @@ $allorganisms = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<table class="table table-striped">
+			<table class="table table-striped table-dark">
 				<thead>
 					<tr>
 						<th>BREED</th>
